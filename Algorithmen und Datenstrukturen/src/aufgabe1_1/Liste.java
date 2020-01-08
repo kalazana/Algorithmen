@@ -2,6 +2,9 @@ package aufgabe1_1;
 
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 public class Liste {
 	private Element anfang = null;
@@ -18,6 +21,17 @@ public class Liste {
 			zeiger = zeiger.getNext();
 		}
 		out.close();
+	}
+
+	public static String loadListe(String _dName) throws IOException{
+		File file = new File(_dName+".csv");
+
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		String st;
+		while((st = br.readLine())!= null){
+			System.out.println(st);
+		}
+		return st;
 	}
 
 	public Liste() {
@@ -37,10 +51,6 @@ public class Liste {
 			line = br.readLine();
 		}
 		br.close();
-	}
-
-	public void loadList(String _dName) throws IOException{
-
 	}
 
 	// fügt ein Element ans Ende an

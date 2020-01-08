@@ -34,6 +34,7 @@ public class Main {
 		liste = new Liste("A01_1_test");
 		System.out.println(liste.countEle() + " Element(e)");
 		liste.print();
+
 		
 		
 		
@@ -49,8 +50,8 @@ public class Main {
 		
 		
 		liste.print();
-		liste.writeList("test");
-
+		liste.writeList("Miau");
+		liste.loadListe("Miau");
 		System.out.println(liste.countEle() + " Element(e)");
 		
 	}
