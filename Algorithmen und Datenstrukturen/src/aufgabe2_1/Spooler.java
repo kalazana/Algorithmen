@@ -12,7 +12,8 @@ public class Spooler {
             stopOutput = false;
             for (int i = 10; i < spooler.length; i++) {
                 if (spooler[i] != null) {
-                    System.out.println("Output: " + spooler[i]);
+                    System.out.println("Output: " + spooler[z]);
+                    z++;
                     spooler[i] = null;
                 }
             }
@@ -30,7 +31,7 @@ public class Spooler {
             }
             System.exit(0);
         } else if (counter >= 10 && !stopOutput && counter<20) {
-            System.out.println("Output: " + spooler[counter-10+z]);
+            System.out.println("Output: " + spooler[z]);
             z++;
         } else if (counter == 20) {
             System.out.println("Spooler ist voll.");
@@ -40,4 +41,3 @@ public class Spooler {
         }
     }
 }
-
