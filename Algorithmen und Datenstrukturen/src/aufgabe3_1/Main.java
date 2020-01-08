@@ -8,4 +8,4 @@ public class Main {
 		tree.add("Dies_ist_ein_binaerer_Baum_zum_traversieren.");
 		tree.print();
 	}
-}//testasd
+}//testasdp
