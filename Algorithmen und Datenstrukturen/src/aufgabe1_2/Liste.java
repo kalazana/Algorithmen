@@ -11,6 +11,9 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class Liste implements Serializable {
+
+
+
     /**
      * Contains (list) entries.
      */

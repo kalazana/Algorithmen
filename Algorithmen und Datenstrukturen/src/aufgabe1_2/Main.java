@@ -42,7 +42,12 @@ public class Main {
             liste.printList();
             System.out.println();
 
-
+            liste.save("hallo");
+            try {
+                liste.load("hallo");
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
